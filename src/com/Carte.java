@@ -23,6 +23,8 @@ public class Carte {
 	public void setCouleurCarte(ColorEnum couleurCarte) {
 		this.couleurCarte = couleurCarte;
 	}
+	
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;

@@ -6,4 +6,9 @@ public enum ColorEnum {
 	CARREAU,
 	TREFLE,
 	PIQUE;
+
+	
+	
+	
+	
 }
