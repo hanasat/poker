@@ -7,7 +7,6 @@ public class Carte {
 		
 	
 	public Carte(ValueEnum valeurCarte, ColorEnum couleurCarte) {
-		super();
 		this.valeurCarte = valeurCarte;
 		this.couleurCarte = couleurCarte;
 	}
@@ -22,6 +21,15 @@ public class Carte {
 	}
 	public void setCouleurCarte(ColorEnum couleurCarte) {
 		this.couleurCarte = couleurCarte;
+	}
+	
+	public boolean egal(Carte U) {
+		if(this.getValeurCarte().getSize() == U.getValeurCarte().getSize()
+				&& this.getCouleurCarte() == U.getCouleurCarte()) {
+			return true;
+		}
+		else
+			return false;
 	}
 	
 	
@@ -42,15 +50,9 @@ public class Carte {
 		if (getClass() != obj.getClass())
 			return false;
 		Carte other = (Carte) obj;
-		if (couleurCarte != other.couleurCarte)
-			return false;
 		if (valeurCarte != other.valeurCarte)
 			return false;
 		return true;
 	}
-	
-	
-	
-	
 
 }

@@ -15,7 +15,7 @@ public enum ValueEnum {
 	ROI(11),
 	AS(12);
 	
-int size;
+	int size;
 	
 	private ValueEnum(int size) {
 		
