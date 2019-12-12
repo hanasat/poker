@@ -15,6 +15,4 @@ public enum ValueEnum {
 	DAME,
 	ROI,
 	AS;
-	
-
 }
